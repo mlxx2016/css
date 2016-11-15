@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css01-九宫格</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.main {
+			
+			background-color: #fff;
+			height: 188px;
+			width: 188px;
+		}
+		.clearfix:after{
+			visibility: hidden;
+			display: inline-block;
+			content: "";
+			height: 0;
+			clear: both;
+			*zoom: 1;
+			
+		}
+		.box1, .box2, .box3, .box4 ,.box5 ,.box6, .box7, .box8, .box9 {
+			width: 60px;
+			height: 60px;
+			border: 1px solid #fff;
+			background-color: #E78326;
+			border-radius: 6px; 
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="main clearfix">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+		<div class="box6"></div>
+		<div class="box7"></div>
+		<div class="box8"></div>
+		<div class="box9"></div>
+	</div>
+</body>
+</html>
