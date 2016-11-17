@@ -1,8 +1,9 @@
+/*css-task01九宫格(没有实现自适应)*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>css01-九宫格</title>
+	<title>css01-九宫格（没有实现自适应）</title>
 	<style>
 		* { padding: 0; margin: 0; }
 		.main {
@@ -41,6 +42,59 @@
 		<div class="box7"></div>
 		<div class="box8"></div>
 		<div class="box9"></div>
+	</div>
+</body>
+</html>
+//
+//
+//
+//
+/*css-task01九宫格实现自适应*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css01-九宫格</title>
+	<style>
+		* { padding: 0; margin: 0; }
+		.main {
+			
+			background-color: #fff;
+			width: 90%;
+			padding-bottom: 90%;
+			
+		}
+		/* .clearfix:after{
+			visibility: hidden;
+			display: inline-block;
+			content: "";
+			height: 0;
+			clear: both;
+			*zoom: 1;
+			
+		} */
+		.box1, .box2, .box3, .box4 ,.box5 ,.box6, .box7, .box8, .box9 {
+			width: 26%;
+			padding-bottom: 26%;
+			border: 1% solid #fff;
+			background-color: #E78326;
+			border-radius: 3%; 
+			float: left;
+			margin: 1%;
+		}
+	</style>
+</head>
+<body>
+	<div class="main clearfix">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+		<div class="box4">4</div>
+		<div class="box5">5</div>
+		<div class="box6">6</div>
+		<div class="box7">7</div>
+		<div class="box8">8</div>
+		<div class="box9">9</div>
 	</div>
 </body>
 </html>
