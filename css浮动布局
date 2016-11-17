@@ -1,0 +1,13 @@
+元素浮动后，相当于给元素设置成块级元素。
+浮动元素后面的非浮动元素，如果非浮动元素是行内元素且定位产生重叠时，行内元素边框、背景和内容都在改浮动元素“之上”显示；
+                      若非浮动元素是块级元素且产生重叠时，块级元素边框、背景在浮动元素“之下”显示，只有内容不在浮动元素内显示。
+浮动元素脱离了文档流，所以父元素是无法根据元素来自适应的。解决方法：1、在所有浮动元素后加 clear：both；
+                                                           2、clearfix
+                                                           .clearfix:before,.clearfix:after {
+                                                              visibility: hidden;
+                                                              display: inline-block;
+                                                              content: "";
+                                                              height: 0;
+                                                              clear: both;
+                                                              *zoom: 1;
+                                                           }
